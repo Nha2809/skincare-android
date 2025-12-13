@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="skincare_made_n_simple_nbeautiful_nand_effective">Skincare made\n simple\nBeautiful\nAnd Effective</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="search">Search</string>
+    <string name="explore_categories">Explore Categories</string>
+    <string name="see_all">See all</string>
+    <string name="popular_products">Popular Products</string>
+    <string name="favorite">Favorite</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="my_cart">My Cart</string>
+    <string name="your_cart_is_empty">Your Cart is Empty</string>
+    <string name="check_out">Check Out</string>
+</resources>
