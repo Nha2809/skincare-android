@@ -16,15 +16,14 @@ class SliderAdapter(
 {
     private lateinit var context: Context
     private val runnable = Runnable {
-        // Since this is used for infinite scrolling, re-assigning the list
-        // and notifying data set change is the correct logic for looping.
+
         sliderItems = sliderItems
         notifyDataSetChanged()
     }
 
 
     class SliderViewHolder(private val binding: SliderItemContainerBinding):
-    // FIX 1: Removed the named argument 'itemView ='
+
         RecyclerView.ViewHolder(binding.root){
         fun setImage(sliderModel: SliderModel, context: Context){
             Glide
@@ -41,7 +40,7 @@ class SliderAdapter(
     ): SliderAdapter.SliderViewHolder {
         context = parent.context
 
-        // FIX 2: Correctly called ViewBinding.inflate using positional arguments (inflater, parent, attachToParent)
+
         val binding = SliderItemContainerBinding.inflate(
             LayoutInflater.from(parent.context),
             parent,
@@ -51,10 +50,10 @@ class SliderAdapter(
     }
 
     override fun onBindViewHolder(holder: SliderAdapter.SliderViewHolder, position: Int) {
-        // Simplified the setImage call (optional, but cleaner)
+
         holder.setImage(sliderItems[position], context)
 
-        // FIX 3: Removed the named argument 'action ='
+
         if(position == sliderItems.lastIndex -1){
             viewPager.post(runnable)
         }

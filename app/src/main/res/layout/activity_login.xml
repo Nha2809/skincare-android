@@ -32,8 +32,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         app:hintEnabled="false"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/purple">
+        app:endIconMode="password_toggle"
+        app:endIconDrawable="@drawable/password_toggle_selector"
+        app:endIconTint="@color/purple">
 
         <EditText
             android:id="@+id/passEt"
@@ -42,8 +43,8 @@
             android:background="@drawable/white_bg2"
             android:hint="Password"
             android:inputType="textPassword"
-            android:paddingHorizontal="16dp" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:paddingStart="16dp"
+            android:paddingEnd="52dp" /> </com.google.android.material.textfield.TextInputLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
